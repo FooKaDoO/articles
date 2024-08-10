@@ -35,7 +35,7 @@ key: value to be replaced
 value: replacement value
 """
 def set_replace_cols(**kwargs):
-    global replace_cols, extra_cols, cols_to_keep
+    global replace_cols, cols_to_keep
     replace_cols = kwargs
 
 """
