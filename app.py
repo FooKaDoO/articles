@@ -23,5 +23,5 @@ app = Flask(__name__)
 
 @app.route("/")
 def get_all_data():
-    service.get_remaining_pages()
+    service.process_remaining_pages()
     return service.get_topN(how_many_to_keep, order_by)
