@@ -1,18 +1,11 @@
-from page_reader import PageReader
+import page_reader
 import data_parser
-
-# Initialization
-
-# Create connection with "database"
-page_reader = PageReader(process_function=data_parser.process_page)
-
-# End of initialization
 
 """
 Returns top 10 titles by number of comments from "https://jsonmock.hackerrank.com/api/articles?page={pageNr}".
 """
 def get_top10_titles():
-    pages = (page_reader
-             .update_pages_data()
-             .get_pages_data())
-    return data_parser.get_top_10_titles_by_num_of_comments(pages)
+    return (data_parser
+            .get_top_10_titles_by_num_of_comments(
+                    page_reader.get_pages_data()
+                ))
