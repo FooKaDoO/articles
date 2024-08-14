@@ -33,7 +33,7 @@ class PageReader:
     """
     Using total pages count, sends requests
     for each remaining page starting from
-    self.page_number
+    self.page_number + 1
     and yields the pages' data.
     """
     def yield_remaining_pages(self):
