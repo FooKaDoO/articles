@@ -56,21 +56,16 @@ python -m unittest discover -s tests -p 'test_*.py'
 ```
 
 ## Other solutions
-There are 2 other solutions to this project, which do not have unit tests.
-1. semi_complicated - uses pandas
-2. complicated - uses pandas, possible to choose sorting, return, saved, replace values.
+There are 4 other solutions to this project, which do not have unit tests.
+1. complicated - uses pandas, possible to choose sorting, return, saved, replace values.
+2. semi_complicated - uses pandas
+3. using_page_reader_class - uses an object for reading pages
+4. using_page_reader_yield - uses yield to read pages
+First 2 solutions were created before the main solution, are incomplete and could be improved on by taking inspiration from the main project.<br>
+PageReader object has unittests for it in the corresponding directory.
 
-These 2 solutions were created before the main solution, are incomplete and could be improved on by taking inspiration from the main project.
-
-### semi_complicated
-Run it in the Python Virtual Environment by moving to the semi_complicated directory and running: 
-
-```
-flask run
-```
-
-### complicated
-Run it in the Python Virtual Environment by moving to the complicated directory and running: 
+### Running the solutions
+Run in the Python Virtual Environment by moving to the solution directory and running: 
 
 ```
 flask run
