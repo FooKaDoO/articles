@@ -3,7 +3,7 @@ import data_parser
 
 # Initialization
 
-#Initialize PageReader with data_parser.process_page
+# Create connection with "database"
 page_reader = PageReader(process_function=data_parser.process_page)
 
 # End of initialization
